@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title >HTML - Marcello Home</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			* {
+			  box-sizing: border-box;
+			}
+
+			body {
+			  font-family: Arial, Helvetica, sans-serif;
+			}
+
+			/* Style the header */
+			header {
+			  background-color: #59bf;
+			  padding: 30px;
+			  text-align: center;
+			  font-size: 35px;
+			  color: #dac8b3;
+			}
+
+			/* Create two columns/boxes that floats next to each other */
+			nav {
+			  float: left;
+			  width: 30%;
+			  background: #E4DCD1 ;
+			  padding: 20px;
+                color: #59bf;
+			}
+
+			/* Style the list inside the menu */
+			nav ul {
+			  list-style-type: none;
+			  padding: 0;
+			}
+
+			article {
+			  float: left;
+			  padding: 20px;
+			  width: 70%;
+            color: #59bf;
+			  background-color: #F7F4F0;
+			}
+
+			/* Clear floats after the columns */
+			section::after {
+			  background: #F0FFFF;
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+			/* Style the footer */
+			footer {
+			  background-color: #59bf;
+			  padding: 10px;
+			  text-align: center;
+			  color: #E4DCD1 ;
+			}
+
+			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+			@media (max-width: 600px) {
+			  nav, article {
+			    width: 100%;
+			    height: auto;
+			  }
+			}
+			</style>
+	</head>
+	<body bgcolor="#E4DCD1">
+
+		<header>
+			<h1>Home Page</h1>
+		</header>
+
+		<section>
+
+			<nav>
+				<h3>Aulas</h3>
+				<ul>
+					<li><a href="./01-introducao.html">Introdução</a></li>
+					<li><a href="./02-listas-e-links.html">Listas e Links</a></li>
+					<li><a href="./03-formatacao-de-texto.html">Formatação de Texto</a></li>
+					<li><a href="./04-tabelas.html">Tabelas</a></li>
+					<li><a href="./Modulo4-Aula1-layout.html">Layouts</a></li>
+					<li><a href="./Modulo4-Aula2-formularios.html">Formulários</a></li>
+				</ul>
+
+				<h3>Redes Sociais</h3>
+				<ul>
+					<li><a href="https://www.linkedin.com/in/marcello-gonzatto-birkan-90322515a/">Linkedin</a></li>
+					<li><a href="https://www.instagram.com/mellobirkan/">Instagram</a></li>
+				</ul>
+                <h3>Sites ultilizados para estudo Front-End</h3>
+                <ul>
+                    <li><a href="https://www.w3schools.com/html/default.asp">W3Schools</a></li>
+                        <dd>(Resumo de tags, e local para testes)</dd>
+                    
+                    <li><a href="https://getmimo.com">M1M0</a></li>
+                      <dd>(Aulas de 5 minutos para treinar o básico)</dd>  
+                </ul>
+			</nav>
+
+			<article>
+                <img width="150" alt="Marcello Birkan" src="https://media-exp1.licdn.com/dms/image/C4D03AQEr1z09Sa9few/profile-displayphoto-shrink_800_800/0/1612231749500?e=1636588800&v=beta&t=gbaG9mRcP7xUCCsGwUaSYh7dwygI--nGxqJ-YTwFdgo">
+			 
+				<h2>Marcello Gonzatto Birkan</h2>
+				
+				<p>Estudante de <em>Ciência da computação</em> pela <strong>Mackenzie</strong><br>Estudante de <em>Front-End</em> pela <strong>EBAC</strong> </p>
+                 <nav>
+                    <img alt="imagem-ebac" src="https://ebaconline.com.br/images/tild6535-3561-4631-a566-366436653863__website_creator-bro.svg">
+                </nav>
+                     
+			</article>
+
+		</section>
+
+		<footer>
+		  <p>Desenvolvido por Marcello</p>
+		</footer>
+		
+	</body>
+</html>
